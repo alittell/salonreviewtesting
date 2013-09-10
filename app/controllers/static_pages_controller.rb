@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def result_no_login
   end
+
+  def login
+  end
 end
