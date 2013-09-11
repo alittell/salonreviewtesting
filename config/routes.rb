@@ -1,8 +1,9 @@
 SalonreviewTesting::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/result_no_login"
-  get "static_pages/login"
+  root  'static_pages#home'
+  match '/about',    to: 'static_pages#about',    via: 'get'
+  match '/login',   to: 'static_pages#login',   via: 'get'
+  match '/search', to: 'static_pages#search', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

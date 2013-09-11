@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 
   <!--<style type="text/css">
   	* {
@@ -13,8 +14,8 @@
   </style>-->
 </head>
 <body>
-
-<%= yield %>
-
+		<%= render 'layouts/nav' %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
 </body>
 </html>
