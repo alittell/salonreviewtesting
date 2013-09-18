@@ -240,7 +240,31 @@
           <h1>Hello, world!</h1>
           <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
         </div>
-        <div class="text-muted">5 Results</div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="text-muted pull-left">5 Results</div>
+              </div>
+              <div class="col-xs-6">
+                <div>
+                  <select class="form-control">
+                    <option>Featured</option>
+                    <option>Highest Rated</option>
+                    <option>Most Reviews</option>
+                    <option>Distance</option>
+                    <option>Newest to Oldest</option>
+                    <option>Oldest to Newest</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 hidden-xs">
+            Google Ads
+          </div>
+        </div>
+        <br>
         <div class="row"><!-- Listing Blurb Start-->
           <div class="col-xs-12 col-sm-8">
             <div class="panel panel-default">
@@ -291,9 +315,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="hidden-xs col-sm-4">
-            Google Ads
           </div>
         </div><!-- Listing Blurb End -->
         <div class="row"><!-- Listing Blurb Start-->
