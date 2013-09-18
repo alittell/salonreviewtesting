@@ -3,19 +3,16 @@
 <head>
   <title>SalonreviewTesting</title>
   <%= stylesheet_link_tag    "application", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
 
-  <!--<style type="text/css">
-  	* {
-  		border:2px blue dotted;
-  	}
-  </style>-->
 </head>
 <body>
 		<%= render 'layouts/nav' %>
 		<%= yield %>
 		<%= render 'layouts/footer' %>
 </body>
+
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 </html>

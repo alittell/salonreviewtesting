@@ -1,0 +1,64 @@
+/*
+ * Affix
+ * --------------------------------------------------
+ */
+
+body {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+
+  #sr-sidebar .well-sm {
+    margin-bottom: 0px;
+  }
+
+  /* Widen the fixed sidebar */
+  #sr-sidebar.affix,
+  #sr-sidebar.affix-bottom {
+    width: 187px;
+  }
+  #sr-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 21px;
+    bottom: auto;
+  }
+  #sr-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+    bottom: 300;
+    top: auto;
+  }
+  #sr-sidebar.affix-bottom,
+  #sr-sidebar.affix {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  /* Widen the fixed sidebar again */
+  #sr-sidebar.affix-bottom,
+  #sr-sidebar.affix {
+    width: 242px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  #sr-sidebar.affix-bottom,
+  #sr-sidebar.affix {
+    width: 292px;
+  }
+}
+
+/*
+ * test stuff
+ * --------------------------------------------------
+ */
+
+
+ .listing-blurb {
+  margin-top:0px;
+  margin-bottom:0px;
+ }

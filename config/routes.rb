@@ -3,6 +3,7 @@ SalonreviewTesting::Application.routes.draw do
   match '/about',    to: 'static_pages#about',    via: 'get'
   match '/login',   to: 'static_pages#login',   via: 'get'
   match '/search', to: 'static_pages#search', via: 'get'
+  match '/test', to: 'static_pages#test', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
