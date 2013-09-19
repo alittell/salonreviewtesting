@@ -57,8 +57,49 @@ body {
  * --------------------------------------------------
  */
 
-
  .listing-blurb {
   margin-top:0px;
   margin-bottom:0px;
  }
+
+ .listing-blurb {
+  font-size: 18px;
+  color:black;
+ }
+
+ /*
+ * Map Stuff
+ * --------------------------------------------------
+ */
+
+ #map {
+  margin-bottom: 20px;
+ }
+
+ @media screen and (min-width: 480px) {
+  #map {
+    width:auto;
+    height:203px;
+  }
+}
+
+ @media screen and (min-width: 768px) {
+  #map {
+    width:532px;
+    height:295px;
+  }
+}
+
+ @media screen and (min-width: 992px) {
+  #map {
+    width:697px;
+    height:266px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #map {
+    width:847px;
+    height:237px;
+  }
+}

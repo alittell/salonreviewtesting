@@ -2,8 +2,8 @@
   <div class="row row-offcanvas row-offcanvas-left">
     <div class="col-xs-6 col-sm-3 sidebar-offcanvas affix" id="sr-sidebar" role="navigation">
       <div class="well well-sm sidebar-nav">
-        <h4 class="text-center">Filter your search</h4>
-        <br/>
+        <h4 class="text-center">Filter your search</h4><br>
+        <input type="location" class="form-control" id="inputLocation" placeholder="Location"><br>
         <div class="panel-group" id="accordion">
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -234,12 +234,38 @@
 
       <div class="col-xs-12 col-sm-9 pull-right">
         <p class="pull-left visible-xs">
-          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Filters</button>
+          <button type="button" class="btn btn-primary btn-xs toggle" data-toggle="offcanvas">Filters</button>
         </p>
-        <div class="jumbotron">
-          <h1>Hello, world!</h1>
-          <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+        <div id='map'></div>
+          <script type='text/javascript'>
+          var map = L.mapbox.map('map', 'examples.map-y7l23tes')
+              .setView([37.9, -77], 5);
+          </script>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="text-muted pull-left">5 Results</div>
+              </div>
+              <div class="col-xs-6">
+                <div>
+                  <select class="form-control input-sm">
+                    <option>Featured</option>
+                    <option>Highest Rated</option>
+                    <option>Most Reviews</option>
+                    <option>Distance</option>
+                    <option>Newest to Oldest</option>
+                    <option>Oldest to Newest</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 hidden-xs">
+            Google Ads
+          </div>
         </div>
+        <br>
         <div class="row"><!-- Listing Blurb Start-->
           <div class="col-xs-12 col-sm-8">
             <div class="panel panel-default">
@@ -290,9 +316,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="hidden-xs col-sm-4">
-            Google Ads
           </div>
         </div><!-- Listing Blurb End -->
         <div class="row"><!-- Listing Blurb Start-->
@@ -357,7 +380,6 @@
                     <span class="text-muted"><small>Colorist</small></span>
                   </div>
                   <div class="col-xs-6 text-right">
-                      <span class="icon-large icon-star"></span>
                       <span class="icon-large icon-star"></span>
                       <span class="icon-large icon-star"></span>
                       <span class="icon-large icon-star"></span><br>
@@ -449,6 +471,18 @@
             </div>
           </div>
         </div><!-- Listing Blurb End -->
+        <div>
+          <hr>
+          <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
       </div><!--/span-->
 
     </div><!--/row-->
